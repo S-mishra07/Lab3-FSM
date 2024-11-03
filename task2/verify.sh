@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#cleanup
+rm -rf obj_dir
+rm -f f1.vcd
+
 # Translate Verilog -> C++ including testbench
 verilator   -Wall --trace \
             -cc f1_fsm.sv \
